@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -12,4 +12,32 @@
 
 .navbar-nav a {
   font-weight: 500;
+}
+
+.introduction {
+  padding: 15vw;
+  background-image: url("./images/introduction-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: contain;
+  height: 50vw;
+}
+
+.introduction h1 {
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  color: #091e42;
+}
+
+.introduction p:nth-child(2) {
+  font-weight: 400;
+  line-height: 28px;
+  color: #344563;
+}
+
+.introduction p:nth-child(3) {
+  font-weight: 500;
+  line-height: 24px;
+  color: #7f8cff;
 }
