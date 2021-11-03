@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand navbar-light px-5">
+      <nav class="shadow navbar navbar-expand navbar-light px-5 fixed-top bg-white">
         <div class="container-fluid">
           <a class="navbar-brand me-auto nav-logo" href="#">My Logo</a>
 
@@ -35,84 +35,158 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="d-flex flex-column container-fluid introduction">
-        <h1>I’m Alexandra<br>
-          Glad to see you!</h1>
-        <p>I’m a software developer! I can help you build a product , feature or website 
-          Look through some of my work and experience! If you like what you see and 
-          have a project you need coded, don’t hestiate to contact me.</p>
-        <p>LET’S CONNECT</p>
-        <ul class="list-group list-group-horizontal"> 
-          <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/twitter.png" alt="Shady's twitter account"></a></li>
-          <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/linkedin.png" alt="Shady's linkedin account"></a></li>
-          <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/medium.png" alt="Shady's medium account"></a></li>
-          <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/github.png" alt="Shady's github account"></a></li>
-          <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/angellist.png" alt="Shady's angellist account"></a></li>
-        </ul>
+    <section class="d-flex flex-column container-fluid introduction">
+      <h1>I’m Alexandra<br>
+        Glad to see you!</h1>
+      <p>I’m a software developer! I can help you build a product , feature or website 
+        Look through some of my work and experience! If you like what you see and 
+        have a project you need coded, don’t hestiate to contact me.</p>
+      <p>LET’S CONNECT</p>
+      <ul class="list-group list-group-horizontal"> 
+        <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/twitter.png" alt="Shady's twitter account"></a></li>
+        <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/linkedin.png" alt="Shady's linkedin account"></a></li>
+        <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/medium.png" alt="Shady's medium account"></a></li>
+        <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/github.png" alt="Shady's github account"></a></li>
+        <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/angellist.png" alt="Shady's angellist account"></a></li>
+      </ul>
+    </section>
+    <section class="d-flex flex-column align-items-center project-cards">
+      <div class="row py-3 px-2 project-card d-flex my-5">
+        <img class="col-6" src="images/project-disp-img-1.png" alt="project display image">
+        <div class="col-6 pt-3 card-info">
+          <h2>Tonic</h2>
+          <p class="text-muted"><span class="text-dark">CANOPY</span> &#8226; Back End Dev &#8226; 2015</p>
+          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          <ul class="list-group list-group-horizontal card-technologies flex-wrap">
+            <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
+            <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
+            <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary">See Project</button>
+        </div>
+      </div>
+      <div class="row py-3 px-2 project-card d-flex my-5 flex-row-reverse">
+        <img class="col-6" src="images/project-disp-img-2.png" alt="project display image">
+        <div class="col-6 pt-3 card-info">
+          <h2>Multi-Post Stories</h2>
+          <p class="text-muted"><span class="text-dark">FACEBOOK</span> &#8226; Full Stack Dev &#8226; 2015</p>
+          <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
+          <ul class="list-group list-group-horizontal card-technologies flex-wrap">
+            <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
+            <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">Ruby on rails</li>
+            <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
+            <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary">See Project</button>
+        </div>
+      </div>
+      <div class="row py-3 px-2 project-card d-flex my-5">
+        <img class="col-6" src="images/project-disp-img-3.png" alt="project display image">
+        <div class="col-6 pt-3 card-info">
+          <h2>Facebook 360</h2>
+          <p class="text-muted"><span class="text-dark">FACEBOOK</span> &#8226; Full Stack Dev &#8226; 2015</p>
+          <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
+          <ul class="list-group list-group-horizontal card-technologies flex-wrap">
+            <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
+            <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">Ruby on rails</li>
+            <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
+            <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary">See Project</button>
+        </div>
+      </div>
+      <div class="card project-card">
+        <div class="row g-0 py-3 px-2 d-flex flex-row-reverse">
+          <div class="col-6">
+            <img class="img-fluid rounded-start" src="images/project-disp-img-4.png" alt="project display image">
+          </div>
+          <div class="col-6">
+            <div class="card-body col">
+              <h2 class="card-title">Uber Navigation</h2>
+              <p class="text-muted card-text"><span class="text-dark">Uber</span> &#8226; Lead Developer &#8226; 2018</p>
+              <p class="card-text">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+              <ul class="list-unstyled list-group list-group-horizontal card-technologies">
+                <li class="me-2"><h5><span class="badge">html</span></h5></li>
+                <li class="me-2"><h5><span class="badge">Ruby on rails</span></h5></li>
+                <li class="me-2"><h5><span class="badge">css</span></h5></li>
+                <li class="me-2"><h5><span class="badge">javaScript</span></h5></li>
+              </ul>
+              <button type="button" class="btn btn-outline-primary">See Project</button>
+              <!-- <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row py-3 px-2 project-card d-flex my-5 flex-row-reverse">
+        <img class="col-6" src="images/project-disp-img-4.png" alt="project display image">
+        <div class="col-6 pt-3 card-info">
+          <h2>Uber Navigation</h2>
+          <p class="text-muted"><span class="text-dark">Uber</span> &#8226; Lead Developer &#8226; 2018</p>
+          <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+          <ul class="list-unstyled list-group list-group-horizontal card-technologies">
+            <li class="me-2"><span class="badge">html</span></li>
+            <li class="me-2"><span class="badge">Ruby on rails</span></li>
+            <li class="me-2"><span class="badge">css</span></li>
+            <li class="me-2"><span class="badge">javaScript</span></li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary">See Project</button>
+        </div>
+      </div> -->
+    </section>
+    <div id="wrapper" class="bg-white">
+      <section class="about-me">
+        <div>
+          <div class="row">
+            <div class="col-lg-5 about-me-info">
+              <h2>
+                About <br>
+                Myself
+              </h2>
+              <p>
+                Hello I’m a software developer! I can help you build a product, 
+                feature or website Look through some of my work and experience! 
+                If you like what you see and have a project you need coded, don’t 
+                hestiate to contact me.
+              </p>
+              <p>LET’S CONNECT</p>
+              <ul class="list-group list-group-horizontal"> 
+                <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/twitter.png" alt="Shady's twitter account"></a></li>
+                <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/linkedin.png" alt="Shady's linkedin account"></a></li>
+                <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/medium.png" alt="Shady's medium account"></a></li>
+                <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/github.png" alt="Shady's github account"></a></li>
+                <li class="list-group-item border-0 px-2"><a href="#"><img src="./images/angellist.png" alt="Shady's angellist account"></a></li>
+              </ul>
+              <button type="button" class="btn btn-outline-primary">Get My Resume</button>
+            </div>
+            <ul class="col-lg-7">
+              <li>
+                <div>
+                  <h4>Languages</h4>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Frameworks</h4>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Skills</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section class="d-flex flex-column align-items-center py-5 px-5 project-cards">
-        <div class="row py-3 px-2 project-card d-flex my-5">
-          <img class="col-6" src="images/project-disp-img-1.png" alt="project display image">
-          <div class="col-6 pt-3 card-info">
-            <h2>Tonic</h2>
-            <p class="text-muted"><span class="text-dark">CANOPY</span> &#8226; Back End Dev &#8226; 2015</p>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <ul class="list-group list-group-horizontal card-technologies flex-wrap">
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
-            </ul>
-            <button type="button" class="btn btn-outline-primary">See Project</button>
-          </div>
-        </div>
-        <div class="row py-3 px-2 project-card d-flex my-5 flex-row-reverse">
-          <img class="col-6" src="images/project-disp-img-2.png" alt="project display image">
-          <div class="col-6 pt-3 card-info">
-            <h2>Multi-Post Stories</h2>
-            <p class="text-muted"><span class="text-dark">FACEBOOK</span> &#8226; Full Stack Dev &#8226; 2015</p>
-            <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
-            <ul class="list-group list-group-horizontal card-technologies flex-wrap">
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">Ruby on rails</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
-            </ul>
-            <button type="button" class="btn btn-outline-primary">See Project</button>
-          </div>
-        </div>
-        <div class="row py-3 px-2 project-card d-flex my-5">
-          <img class="col-6" src="images/project-disp-img-3.png" alt="project display image">
-          <div class="col-6 pt-3 card-info">
-            <h2>Facebook 360</h2>
-            <p class="text-muted"><span class="text-dark">FACEBOOK</span> &#8226; Full Stack Dev &#8226; 2015</p>
-            <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
-            <ul class="list-group list-group-horizontal card-technologies flex-wrap">
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">Ruby on rails</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
-            </ul>
-            <button type="button" class="btn btn-outline-primary">See Project</button>
-          </div>
-        </div>
-        <div class="row py-3 px-2 project-card d-flex my-5 flex-row-reverse">
-          <img class="col-6" src="images/project-disp-img-4.png" alt="project display image">
-          <div class="col-6 pt-3 card-info">
-            <h2>Uber Navigation</h2>
-            <p class="text-muted"><span class="text-dark">Uber</span> &#8226; Lead Developer &#8226; 2018</p>
-            <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
-            <ul class="list-group list-group-horizontal card-technologies flex-wrap">
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">html</li>
-              <li class="list-group-item border-0 px-2 mx-2 ms-0 mb-2">Ruby on rails</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
-              <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
-            </ul>
-            <button type="button" class="btn btn-outline-primary">See Project</button>
-          </div>
-        </div>
-      </section>
-    </main>
+      <footer>
+
+      </footer>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
