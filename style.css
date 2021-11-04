@@ -93,7 +93,8 @@ header, .introduction {
 
 .card-info h2,
 .about-me h2,
-.card-body h2 {
+.card-body h2,
+#staticBackdropLabel {
   color: #091E42;
   font-weight: 700;
 }
@@ -118,12 +119,18 @@ header, .introduction {
   height: 10vw;
 }
 
-.card-info p:nth-child(2) {
+.card-info p:nth-child(2),
+.modal-header p {
   font-weight: 400;
 }
 
-.card-info p:nth-child(2) span {
+.card-info p:nth-child(2) span,
+.modal-header p span {
   font-weight: 500;
+}
+
+.modal-body img {
+  width: 100%;
 }
 
 .card-info p:nth-child(3),
@@ -174,4 +181,9 @@ body.modal-open > :not(.modal) {
 .see-live-btn:after {
   font-family: 'FontAwesome';
   content: " \f08e";
+}
+
+.github-icon-modal {
+  width: 20px !important;
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
