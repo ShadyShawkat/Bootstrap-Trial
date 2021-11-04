@@ -170,3 +170,8 @@ hr {
 body.modal-open > :not(.modal) {
   filter: blur(5px);
 }
+
+.see-live-btn:after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+}
