@@ -113,3 +113,28 @@ header, .introduction {
   line-height: 16px;
   letter-spacing: 0.03em;
 }
+
+.language {
+  background-color: #F7F7F9;
+  min-width: fit-content !important;
+  width: 20% !important;
+  border-radius: 8px;
+}
+
+.language h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+li h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #344563;
+}
+
+hr {
+  margin: 0;
+}
