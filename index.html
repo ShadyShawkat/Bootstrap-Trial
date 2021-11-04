@@ -15,6 +15,26 @@
   </head>
   <body>
     <header>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav class="shadow navbar navbar-expand navbar-light px-5 fixed-top bg-white">
         <div class="container-fluid">
           <a class="navbar-brand me-auto nav-logo" href="#">My Logo</a>
@@ -62,7 +82,8 @@
             <li class="list-group-item border-0 px-2 mx-2 mb-2">css</li>
             <li class="list-group-item border-0 px-2 mx-2 mb-2">javaScript</li>
           </ul>
-          <button type="button" class="btn btn-outline-primary">See Project</button>
+          <!-- Button trigger modal -->
+          <button type="button" onclick="blurBody()" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">See Project</button>
         </div>
       </div>
       <div class="row py-3 px-2 project-card d-flex my-5 flex-row-reverse">
@@ -176,12 +197,31 @@
           </div>
         </div>
       </section>
-      <footer>
-
+      <footer class="contact-me d-flex flex-column align-items-center">
+        <form class="d-flex flex-column align-items-center w-50" action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form">
+          <h2 class="my-2">Contact me</h2>
+          <p class="text-center my-2">
+            If you have an application you are interested in developing, a feature that you need 
+            built or a project that needs coding. I’d love to help with it 
+          </p>
+          <input maxlength="30" type="text" name="name" id="name" class="my-2 border-0 p-2 w-75 bg-white" placeholder="Alexandra Loremipsum" required>
+          <input type="email" name="email" id="email" class="my-2 border-0 p-2 w-75 bg-white" placeholder="alexandra@gmail.com" required>
+          <textarea maxlength="500" id="message" class="my-2 border-0 p-2 w-75 bg-white" name="message" placeholder="Write your message here"
+              required></textarea>
+          <div class="d-flex flex-wrap bg-white rounded-2 my-2">
+            <button type="submit" class="btn btn-outline-primary">Get In Touch</button>
+          </div>
+        </form>
       </footer>
     </div>
 
-
+    <script>
+      function blurBody() {
+        var body = document.getElementsByTagName('body')[0];
+        
+        element.classList.add("blur");
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
