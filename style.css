@@ -167,6 +167,6 @@ hr {
   margin: 0;
 }
 
-.blur {
+body.modal-open > :not(.modal) {
   filter: blur(5px);
 }
